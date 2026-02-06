@@ -1,5 +1,6 @@
 import os
 import sys
+import argparse
 import traceback
 import google.auth.transport.requests
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -8,7 +9,6 @@ from googleapiclient.http import MediaFileUpload
 from google.oauth2.credentials import Credentials
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def auth():
@@ -24,58 +24,47 @@ def auth():
 
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
-            print("🔄 Refreshing token...")
             creds.refresh(google.auth.transport.requests.Request())
         else:
-            print("🔐 Opening browser for Google login...")
             flow = InstalledAppFlow.from_client_secrets_file(secrets_path, SCOPES)
             creds = flow.run_local_server(port=0)
-
         with open(token_path, "w") as f:
             f.write(creds.to_json())
 
     return build("youtube", "v3", credentials=creds)
 
-def upload(video_path, title):
-    print("📤 Starting uploader...")
-    print(f"📂 Working directory: {BASE_DIR}")
-    print(f"🎞 Video path: {video_path}")
-
+def upload(video_path, title, description, tags):
+    print(f"📤 Uploading: {title}")
     youtube = auth()
 
     request = youtube.videos().insert(
         part="snippet,status",
         body={
             "snippet": {
-                "title": title + " #Shorts",
-                "description": "Movie update. 100% original content. #Shorts",
-                "tags": ["bollywood", "movie news", "shorts"],
-                "categoryId": "25"
+                "title": title,
+                "description": description,
+                "tags": tags.split(","),
+                "categoryId": "24" 
             },
             "status": {
                 "privacyStatus": "private"
             }
         },
-        media_body=MediaFileUpload(video_path, mimetype="video/mp4", resumable=False)
+        media_body=MediaFileUpload(video_path, mimetype="video/mp4", resumable=True)
     )
-
-    print("⏳ Uploading to YouTube...")
-
     response = request.execute()
-
-    print("\n🎉 UPLOAD SUCCESSFUL")
-    print(f"🆔 VIDEO ID : {response['id']}")
-    print(f"🔗 https://www.youtube.com/shorts/{response['id']}")
+    print(f"✅ SUCCESS! Video ID: {response['id']}")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--file", required=True)
+    parser.add_argument("--title", required=True)
+    parser.add_argument("--description", default="tune with us for more such news")
+    parser.add_argument("--tags", default="news, shorts")
+    
+    args = parser.parse_args()
     try:
-        if len(sys.argv) < 3:
-            raise ValueError("Usage: python upload_video.py <video_path> <title>")
-
-        upload(sys.argv[1], sys.argv[2])
-
+        upload(args.file, args.title, args.description, args.tags)
     except Exception as e:
-        print("\n❌ UPLOADER FAILED")
         traceback.print_exc()
-
-    input("\nPress ENTER to close this window...")
+    input("\nPress ENTER to close...")

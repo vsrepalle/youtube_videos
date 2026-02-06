@@ -1,40 +1,30 @@
 {
-  "video_name": "ULTIMATE_VIRAL_TEST_2026.mp4",
-  "news_date": "February 5, 2026",
-  "location": "Global",
+  "video_name": "RANBIR_VS_RANVEER_2026.mp4",
+  "metadata": {
+    "title": "Ranveer Singh DESTROYS Animal's Record! 😱 Ranbir Kapoor's Revenge? #Dhurandhar #Animal #Shorts",
+    "description": "The box office has a new King! Ranveer Singh's Dhurandhar has officially crossed 1300 Crores, leaving Ranbir's Animal behind. \n\n📍 Date: Feb 6, 2026\n📍 News: Animal re-releasing in Japan to fight back!\n\nWho is the real GOAT of Bollywood? Comment 'RANBIR' or 'RANVEER'! \n\ntune with us for more such news",
+    "tags": "Ranveer Singh, Ranbir Kapoor, Dhurandhar vs Animal, Box Office 2026, Animal Japan Release"
+  },
   "scenes": [
     {
       "id": "HOOK",
-      "text": "The internet is breaking today! From Bollywood history to billionaire records, here are the top 5 viral stories.",
-      "search_key": "breaking news digital world map background 4k",
-      "query": "news background"
-    },
-    {
-      "id": 5,
-      "title": "Ranveer's Dhurandhar Record",
-      "text": "At number 5, Bollywood has a new king! Ranveer Singh's 'Dhurandhar' has officially sold 4 crore tickets, beating all-time records.",
-      "search_key": "Ranveer Singh Dhurandhar movie official release poster",
-      "query": "Ranveer Singh success"
-    },
-    {
-      "id": 4,
-      "title": "Mrunal & Siddhant Blushing",
-      "text": "Number 4. Mrunal Thakur was left blushing after Siddhant Chaturvedi teased her about a 'Chennai connection' at their latest event.",
-      "search_key": "Mrunal Thakur Siddhant Chaturvedi event",
-      "query": "Mrunal Thakur blushing"
-    },
-    {
-      "id": "SUB",
-      "text": "We are seconds away from today's biggest viral story. Subscribe now and tune with us for more such news!",
-      "search_key": "YouTube Subscribe button neon 4k animation",
-      "query": "subscribe now"
+      "text": "It’s official! Ranveer Singh’s Dhurandhar has smashed Animal’s 915 crore record, crossing 1300 crores worldwide!",
+      "search_key": "Ranveer Singh intense Dhurandhar poster"
     },
     {
       "id": 1,
-      "title": "The Nuclear Treaty Expires",
-      "text": "The Number 1 viral story: The US-Russia New START treaty has officially expired today. Global security is now in a new era. Tune with us for more such news.",
-      "search_key": "US and Russia flags nuclear missile silhouette",
-      "query": "global politics 2026"
+      "text": "Ranbir isn't giving up. Animal is re-releasing in Japan on Feb 13 to take back the crown. Can he do it?",
+      "search_key": "Ranbir Kapoor Animal axe fight scene"
+    },
+    {
+      "id": 2,
+      "text": "Ranveer's Hamza vs Ranbir's Ranvijay. One is an undercover agent, the other is a wild animal. Who is more dangerous?",
+      "search_key": "Ranveer Singh Dhurandhar vs Ranbir Kapoor Animal"
+    },
+    {
+      "id": "SUB",
+      "text": "The war moves to the sequels next! Subscribe and tune with us for more such news!",
+      "search_key": "Dhurandhar 2 The Revenge teaser poster"
     }
   ]
 }

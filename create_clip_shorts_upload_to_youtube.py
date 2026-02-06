@@ -11,7 +11,7 @@ if not hasattr(PIL.Image, 'ANTIALIAS'):
 
 from moviepy.editor import VideoFileClip, concatenate_videoclips, AudioFileClip, vfx
 
-PEXELS_API_KEY = 'YOUR_PEXELS_API_KEY' # Get this for free from Pexels.com
+PEXELS_API_KEY = 'Oszdsq7V3DU1S8t1n6coHlHHeHb76cxZjb1HRYYvru32CpQYSmrO52ax' # Get this for free from Pexels.com
 
 def download_pexels_video(query, save_path):
     headers = {'Authorization': PEXELS_API_KEY}

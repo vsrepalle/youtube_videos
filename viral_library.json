@@ -1,0 +1,36 @@
+{
+  "videos": [
+    {
+      "id": "VIRAL_NEWS_FEB_04",
+      "topic": "today's most viral global news",
+      "location": "global / india",
+      "day": "wednesday",
+      "is_news": true,
+      "hook": "a $138 billion trade deal and a massive ai crash... here is what's viral today. 🚨",
+      "scenes": [
+        {
+          "text": "the india-us trade deal just slashed tariffs from 50% to 18%, sending the rupee soaring.",
+          "query": "trump modi trade deal handshake 2026"
+        },
+        {
+          "text": "meanwhile, indian it stocks crashed after new ai tools from anthropic threatened tech jobs.",
+          "query": "stock market red screen technology crash"
+        },
+        {
+          "text": "in mumbai, a chilling video of hydrogen balloons exploding in a lift has gone viral.",
+          "query": "cctv footage lift explosion safety warning"
+        },
+        {
+          "text": "elevenlabs just hit an $11 billion valuation as ai voice tech reaches human-like levels.",
+          "query": "elevenlabs ai voice technology office"
+        },
+        {
+          "text": "today's takeaway: the tech world is moving faster than ever! tune with us for more such news!",
+          "query": "futuristic city high speed data"
+        }
+      ],
+      "bg_color": "#0f0f19",
+      "font_color": "#ffffff"
+    }
+  ]
+}

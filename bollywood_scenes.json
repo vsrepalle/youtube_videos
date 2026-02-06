@@ -1,0 +1,40 @@
+{
+  "video_name": "ULTIMATE_VIRAL_TEST_2026.mp4",
+  "news_date": "February 5, 2026",
+  "location": "Global",
+  "scenes": [
+    {
+      "id": "HOOK",
+      "text": "The internet is breaking today! From Bollywood history to billionaire records, here are the top 5 viral stories.",
+      "search_key": "breaking news digital world map background 4k",
+      "query": "news background"
+    },
+    {
+      "id": 5,
+      "title": "Ranveer's Dhurandhar Record",
+      "text": "At number 5, Bollywood has a new king! Ranveer Singh's 'Dhurandhar' has officially sold 4 crore tickets, beating all-time records.",
+      "search_key": "Ranveer Singh Dhurandhar movie official release poster",
+      "query": "Ranveer Singh success"
+    },
+    {
+      "id": 4,
+      "title": "Mrunal & Siddhant Blushing",
+      "text": "Number 4. Mrunal Thakur was left blushing after Siddhant Chaturvedi teased her about a 'Chennai connection' at their latest event.",
+      "search_key": "Mrunal Thakur Siddhant Chaturvedi event",
+      "query": "Mrunal Thakur blushing"
+    },
+    {
+      "id": "SUB",
+      "text": "We are seconds away from today's biggest viral story. Subscribe now and tune with us for more such news!",
+      "search_key": "YouTube Subscribe button neon 4k animation",
+      "query": "subscribe now"
+    },
+    {
+      "id": 1,
+      "title": "The Nuclear Treaty Expires",
+      "text": "The Number 1 viral story: The US-Russia New START treaty has officially expired today. Global security is now in a new era. Tune with us for more such news.",
+      "search_key": "US and Russia flags nuclear missile silhouette",
+      "query": "global politics 2026"
+    }
+  ]
+}
